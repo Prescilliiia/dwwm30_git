@@ -1,0 +1,7 @@
+main{
+    width: 95%;
+    background: rgba(228,0,0,.3);
+}
+article img, img {
+    width: 100%;
+} 

@@ -1,0 +1,76 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body{
+    /*background url avec une image locale*/
+    background: url("../media/animal.jpg") no-repeat;
+    /*image aléatoire*/
+    background: url("https://picsum.photos/1980/1280") no-repeat;
+    /*image définie*/
+    background: url("https://picsum.photos/id/62/1980/1280") no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 4em;
+    font-weight: 100;
+}
+header{
+    background: rgba(40,40,40,0.9);
+    color: white;
+    text-align: center;
+}
+nav{
+    text-align: right;
+}
+header a{
+    margin-right: 2em;
+}
+a{
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+#question p{
+    font-size: 1.5em;
+    background: royalblue;
+    color: aliceblue;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+main{
+    width: 70%;
+    margin: 1em auto;
+    background: #C4F2EE99;
+    backdrop-filter: blur(15px);
+    padding: 4em .5em;
+    border-radius: 10px;
+}
+img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+#reponse a{
+    color: rebeccapurple;
+}
+.alert{
+    background: crimson;
+    margin: 1em;
+    border: 1px solid orange;
+}
+footer{
+    background: rgba(40,40,40,0.9);
+    color: #C4F2EE;
+    padding: 0.5em;
+    min-height: 5vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer li{
+    list-style-type: none;
+}

@@ -1,0 +1,29 @@
+body{
+    background: lightgray;
+}
+header{
+    background: royalblue;
+}
+h1{
+    background: seagreen;
+}
+p{
+    font-weight: bolder;
+    text-align: right;
+}
+nav{
+    background: skyblue;
+}
+main{
+    background: aliceblue;
+}
+section{
+    background: olivedrab;
+}
+article{
+    background: green;
+}
+aside{
+    color: white;
+    background: black;
+}

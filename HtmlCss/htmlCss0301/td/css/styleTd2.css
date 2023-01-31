@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    scroll-behavior: smooth;
+}
+header{
+    background: linear-gradient(to right, black, transparent);
+    color: #eee;
+}
+body{
+    background: rosybrown;
+    background-size: cover;
+    background: url("../media/ice-crystal.jpg") fixed;
+}
+main{
+    background: #eee;
+    width: 70%;
+    margin: auto;
+    padding: 1em;
+}
+h1{
+    letter-spacing: 10px;
+}
+p{
+    font-variant: small-caps;
+}
+h2{
+    padding-left: 2em;
+}
+nav{
+    background: #eee;
+    position: sticky;
+    left:0;
+    top:0;
+    width: 13vw;
+}
+nav a{
+    color: royalblue;
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+}
+nav a:hover{
+    color: goldenrod;
+    transform:scale(1.2);
+}
+.separate{
+    border-bottom: 2px crimson solid;
+    width: 100%;
+    margin: 2px auto;
+}
+img{
+    transition: 1s;
+}
+
+/*
+img:hover{
+    transform:rotate(360deg);
+}
+*/
+ul{
+    list-style: none;
+}
+#pre p{
+    white-space: pre;
+}
+#pre div a{
+    display: block;
+}
+footer{
+    position: fixed;
+    bottom:0;
+    left: -10em;
+    background: #eee;
+    padding: 1em;
+    border-radius: 0 10px 0 0;
+    transition: 1s;
+    background: olivedrab;
+}
+footer:hover{
+    left: 0;
+}
+main{
+    z-index: 2;
+}

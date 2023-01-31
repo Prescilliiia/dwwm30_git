@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face{
+    font-family: "dufanthe";
+    src:url("../font/Dufanthe.ttf") format("truetype");
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+.policePerso{
+    font-family: "dufanthe";
+    font-size: 3em;
+}
+main{
+    width: 70%;
+    margin: 1em auto;
+}
+/*** section Boxes ****/
+#boxes aside{
+    background: tomato;
+    height:20em;
+    width: 30em;
+    padding: 1em;
+}
+.box{
+    background: seagreen;
+    height: 10em;
+    width: 15em;
+    border: 1em solid royalblue;
+    margin: 1em;
+    padding: 1em;
+}
+.borderBox{
+    box-sizing: border-box;
+}
+.borderBox img{
+    width: 100%;
+}
+
+/*** section flex ***/
+#flex article{
+    min-height:50vh;
+    background: slateblue;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin: auto;
+}
+
+#flex div{
+    height:25vmin;
+    width:25vmin;
+    background: limegreen;
+    border: black solid 1px;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+/****** Tableau ********/
+table{
+    width: 90%;
+    margin: 2em auto;
+    border-collapse: collapse;
+}
+td{
+    border: 1px black solid;
+    padding: 0.5em;
+}
+thead{
+    background: #333;
+    color:#fff;
+}
+tr:nth-child(even){
+    background: skyblue;
+}
+video{
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+}
+figure img{
+    width: 40%;
+    border-radius: 50%;
+}
+iframe{
+    display: block;
+    margin: 1em auto;
+    width: 45%;
+}
+.iframes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

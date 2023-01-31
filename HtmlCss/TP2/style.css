@@ -1,0 +1,92 @@
+nav{
+    width: 80em;
+    height: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center ;
+
+}
+
+a{
+    color:white;
+    font-size:medium;
+    font-weight: bolder;
+    padding: 0.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width:100px;
+    text-decoration: none;
+}
+
+nav {
+    background-color: darksalmon;
+    height: auto;
+    width: auto;
+}
+
+h1{
+    color: aliceblue;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h2{
+    text-align: center;
+    color: #a52a2a;
+}
+figure{
+    background-color: burlywood;
+    height: 120vh;
+    width: 48em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    color: #a52a2a;
+
+    
+}
+button{
+    background-color: floralwhite;
+    border-radius: 10%;
+    border: 4px double #a52a2a ;
+    color:#a52a2a;
+    font-size: larger;
+    cursor: pointer;
+    display: inline-block;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+article{
+    height: 100vh;
+    width: 40em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    color: #a52a2a;
+}
+article h2{
+    color: #a52a2a;
+   
+}
+
+footer{
+    background-color: darksalmon;
+    padding: 1em;
+    text-align: center;
+} 
+
+footer a{
+    color: aliceblue;
+   
+}

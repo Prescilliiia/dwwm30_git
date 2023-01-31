@@ -1,0 +1,53 @@
+#navbarNav{
+	justify-content: flex-end;
+}
+
+header{
+	background-image: url(../img/hero_1.jpg);
+    height: 548px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+header h1{
+	color: white;
+    font-size: 5em;
+    line-height: 1.2;
+    margin-top: 60px;
+}
+
+main{
+	height: 800px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link, .navbar-nav .nav-link {
+	color: white;
+}
+
+.btn-cadre{
+	border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 0.6em;
+}
+
+section{
+	padding: 60px 0; /*60px t/b  0 l/r*/
+}
+
+.collaborate .card img{
+	filter: grayscale(100%);
+}
+
+.collaborate .card img:hover{
+	filter: grayscale(60%);
+}
+
+.collaborate .card a{
+	color: #52565e;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+}

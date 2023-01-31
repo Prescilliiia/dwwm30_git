@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- Métadonnées head -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Cours HTML / CSS</title>
+    </head>
+    <body>
+        <!-- Section d'entête header -->
+        <header>
+            <h1>Cours de HTML / CSS</h1>
+            <nav>
+                <a href="annexes.html">Annexes</a>
+                <a href="#title">Title</a>
+                <a href="#obsolete">Obsolete</a>
+                <a href="#list">List</a>
+                <a href="#link">Link</a>
+                <a href="#css">CSS</a>
+            </nav>
+        </header>
+        <!-- Section principale main -->
+        <main>
+            <section id="title">
+                <h2>Titres</h2>
+                <article>
+                    <h3>Exemples de titres</h3>
+                    <p>Les titres vont de 1 a 6 par ordre d'importance</p>
+                    <aside>
+                        <h1>Titre de niveau 1</h1>
+                        <h2>Titre de niveau 2</h2>
+                        <h3>Titre de niveau 3</h3>
+                        <h4>Titre de niveau 4</h4>
+                        <h5>Titre de niveau 5</h5>
+                        <h6>Titre de niveau 6</h6>
+                    </aside>
+                </article>
+            </section>
+            <section id="obsolete">
+                <h2>Eléments stylisés via html(obsolètes)</h2>
+                <p>On cherchera a éviter tout idée de style directement dans le html</p>
+                <i>On préferera l'usage d'un style CSS à la balise i pour l'italique ou <b>b pour le gras</b></i>
+                <aside>
+                    <p>Il existe des balises pour le retour à la ligne et des séparateurs qu'on évitera tout autant<br>
+                    Ces élements ajoutent des variations difficiles à anticiper puisque quand on corrige le style d'une page on regarde principalement le CSS
+                    </p>
+                    <hr>
+                    <p>C'est d'autant plus vrai pour les éléments comme &lt;hr> qui ont un impact visuel fort.</p>
+                </aside>
+                <article>
+                    <h3>Balises block et inline</h3>
+                    <p>Les balises block font 100% de la largeur de la page et donc le contenu qui les précede ou leur succède sera au dessus ou en dessous.</p>
+                    <div>L'élément neutre &lt;div> est une balise block, tout comme &lt;p></div>
+                    <p>Par contre <span>la balise span</span> est une balise inline qui s'incorpore directement au texte ou au flux des éléments autour</p>
+                </article>
+            </section>
+            <section id="list">
+                <h2>Les listes</h2>
+                <article>
+                    <h3>Les listes non-ordonnées</h3>
+                    <p>Une liste non ordonnée présente les élements ornés d'une puce pour les mettre en valeur</p>
+                    <ul>
+                        <li>Premier élement de la liste</li>
+                        <li>Un autre élement de liste</li>
+                        <li>Encore un autre</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Les listes ordonnées</h3>
+                    <p>Permettent de numéroter les élements de liste</p>
+                    <ol>
+                        <li>Element de liste no 1</li>
+                        <li>Element de liste no 2</li>
+                        <li>Element de liste no 3</li>
+                    </ol>
+                </article>
+            </section>
+            <section id="link">
+                <h2>Les liens</h2>
+                <article>
+                    <h3>Lien externe</h3>
+                    <p>Un lien externe est un lien vers une ressource que l'on a pas sur notre site</p>
+                    <ul>
+                        <li><a href="https://jsbin.com/" target="blank">Lien vers jsBin</a></li>
+                        <li><a href="https://picsum.photos/id/237/200/300">Lien vers une image</a></li>
+                    </ul>
+                    <aside>
+                        <h4>Ouverture dans des onglets</h4>
+                        <ul>
+                            <li><a href="https://picsum.photos/id/221/200/300" target="blank">Lien vers une image (target="blank") dans un nouvel onglet ou l'onglet de réference déjà ouvert par cette page</a></li>
+                            <li><a href="https://picsum.photos/id/158/200/300" target="_blank">Lien vers une image(target="_blank") dans un nouvel onglet</a></li>
+                        </ul>
+                    </aside>
+                </article>
+                <article>
+                    <h3>Lien interne</h3>
+                    <p>Les liens internes se réfèrent à une ressource mise à disposition sur notre site</p>
+                    <aside>
+                        <h4>Liens vers des pages</h4>
+                        <ul>
+                            <li><a href="annexes.html">Lien vers la page d'annexes</a></li>
+                            <li><a href="pages/liens.html">Page de liens</a></li>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <h4>Lien vers d'autres fichiers</h4>
+                        <ul>
+                            <li><a href="resources/readMe.md">Lien vers le fichier readMe (le navigateur sait l'ouvrir)</a></li>
+                            <li><a href="resources/htmlCss2112.zip">Lien vers l'archive du cours (le navigateur ne sait pas l'ouvrir : il la télécharge</a></li>
+                        </ul>
+                    </aside>
+                    <aside>
+                        <h4>Ancres</h4>
+                        <a href="#">Retour au début de la page</a>
+                        <a href="#link">Ancre vers un ID</a>
+                        <a href="annexes.html#plan">Ancre vers un ID sur une autre page (id="plan" dans la première section de la page annexes.html)</a>
+                    </aside>
+                </article>
+                <article>
+                    <h3>Liens d'importation de ressources dans notre page</h3>
+                    <p>On peut importer des données contenues dans des fichiers connexes et les afficher ou s'en servir de référence dans notre html</p>
+                    <aside>
+                        <h4>Balises multimedia</h4>
+                        <p>Les balises multimédia permettent d'afficher du contenu multimedia correspondant à l'adresse que l'on renseigne</p>
+                        <img src="resources/media/fox.png" alt="Photo de renard de Noël">
+                    </aside>
+                    <aside>
+                        <h4>Fichiers de scripts et de style</h4>
+                        <p>Les fichiers de scripts javaScript et de style CSS peuvent être liés à notre page pour en recevoir les instructions</p>
+                        <link rel="stylesheet" href="css/style.css">
+                    </aside>
+                </article>
+            </section>
+            <section>
+                <h2>Tableaux HTML</h2>
+                <article>
+                    <h3>Tableau de livres</h3>
+                    <table>
+                        <thead>
+                            <th>Titre du livre</th>
+                            <th>Auteur</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Le tour du monde en 80 Jours</td>
+                                <td>Jules Vernes</td>
+                            </tr>
+                            <tr>
+                                <td>Les Fleurs du Mal</td>
+                                <td>Baudelaire</td>
+                            </tr>
+                            <tr>
+                                <td>Les androïdes rêvent ils de moutons électriques?</td>
+                                <td>Philip K.Dick</td>
+                            </tr>
+                            <tr>
+                                <td>Hosties Noires</td>
+                                <td>Léopold-Sédar-Senghor</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <th>Titre du livre</th>
+                            <th>Auteur</th>
+                        </tfoot>
+                    </table>
+
+                    <p>En anglais : odd = impair et even = pair</p>
+                </article>
+            </section>
+            <section>
+                <h2>Balises multimedia</h2>
+                <article>
+                    <h3>Audio</h3>
+                    <audio autoplay controls loop src="resources/media/soft-piano-100-bpm-121529.mp3"></audio>
+                </article>
+                <article>
+                    <h3>Video</h3>
+                    <video autoplay loop muted src="resources/media/ocean.mp4"></video>
+                </article>
+                <article>
+                    <h3>Image et figure</h3>
+                    <figure>
+                        <img src="https://thispersondoesnotexist.com/image" alt="Photo de profil aléatoire">
+                        <figcaption>
+                            <h4>Photo de profil aléatoire</h4>
+                            <p>Cette image est générée par une IA</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <h3>Iframe</h3>
+                    <aside class="iframes">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/asToYAq0F-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="coursCSS.html" frameborder="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.918933104547!2d2.410111251317135!3d48.821608179182185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e672f90456212d%3A0xe7f87d3cdd01e7c4!2s5%20Rue%20de%20Conflans%2C%2094220%20Charenton-le-Pont!5e0!3m2!1sfr!2sfr!4v1672742325040!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </aside>
+                </article>
+            </section>
+            <section>
+                <h2>Formulaires HTML</h2>
+                <form method="GET" action="annexes.html">
+                    <h3><label for="name">Text : </label></h3>
+                    <input type="text" name="prenom" id="name" placeholder="Entrez votre prénom" required value="default">
+                    <h3>Password</h3>
+                    <input type="password" name="mdp">
+                    <h3>Tel</h3>
+                    <input type="tel" name="Telephone" pattern="[0-9]">
+                    <h3>Email</h3>
+                    <input type="email" name="Email" value="default@email.com">
+                    <h3>Textarea</h3>
+                    <textarea rows="5" name="message"></textarea>
+                    <h3>Select</h3>
+                    <select name="country">
+                        <option value="belgique">Belgique</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="france">France</option>
+                    </select>
+                    <h3>CheckBox</h3>
+                    <aside>
+                        <input type="checkbox" name="newsletter" id="newsletter" checked>
+                        <label for="newsletter">Je souhaite recevoir la newsletter de Cours du Mercredi</label>
+                    </aside>
+                    <aside>
+                        <input type="checkbox" name="ad" id="ad">
+                        <label for="ad">Je souhaite recevoir des propositions des annonceurs partenaires de Cours du Mercredi?</label>
+                    </aside>
+                    <h3>Radio</h3>
+                    <p>Selectionnez votre genre</p>
+                    <p>
+                        <input type="radio" name="gender" value="masculin"><label >Masculin</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="gender" value="feminin"><label >Féminin</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="gender" value="autres"><label >Autres</label>
+                    </p>
+                    <h3>Date</h3>
+                    <input type="date" name="date">
+                    <h3>Color</h3>
+                    <input type="color" name="color">
+                    <h3>Number</h3>
+                    <input type="number" name="number" min="0" max="200" step="10">
+                    <h3>Range</h3>
+                    <input type="range" name="range" step="1" max="10">
+                    <hr>
+                    <input type="submit" value="envoyer">
+                </form>
+            </section>
+            <section id="css">
+                <h2>Cours de CSS</h2>
+                <a href="coursCSS.html">Cours CSS</a>
+            </section>
+        </main>
+        <!-- Footer : pied de page avec les mentions légales notamment -->
+        <footer>
+            <p>&copy; cours du Mercredi</p>
+            <p><a href="annexes.html#plan">Plan de site</a></p>
+            <article>
+                <h4>Crédits</h4>
+                <p>
+                    Image par <a href="https://pixabay.com/fr/users/missartem-18161995/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7565907">missartem</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7565907">Pixabay</a>
+                </p>
+                <p>
+                    Sound Effect by <a href="https://pixabay.com/fr/users/royalty_free_music-30304778/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=121529">royalty_free_music</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=121529">Pixabay</a>
+                </p>
+                <p>
+                    Vidéo de <a href="https://pixabay.com/fr/users/mohammedksm-30639570/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=135658">mohammed el kasmi</a> sur <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=135658">Pixabay</a>
+                </p>
+            </article>
+        </footer>
+    </body>
+</html>

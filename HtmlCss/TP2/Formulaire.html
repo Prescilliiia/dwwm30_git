@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="formulaire.css">
+        <link rel="index" href="Index.html">
+        <form method="GET" action="annexes.html">
+    </head>
+    <header>
+        <h1>FORMULAIRE</h1>
+    </header>
+    <body>
+            <h3>Civilité</h3>
+            <select name="civilité">
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+                <option value="mademoiselle">Mademoiselle</option>
+            </select>
+            <h3><label for="name">Nom : </label></h3>
+            <input type="name" name="Nom" id="name" placeholder="Entrez votre nom" >
+            <h3>Prénom : </h3>
+            <input type="password" name="Entrezvotre prénom">
+            <h3>Email :</h3>
+            <input type="email" name="Email" value="default@email.com">
+            <h3>Tel :</h3>
+            <input type="tel" name="Telephone" pattern="[0-9]">
+            <h3>Texte :</h3>
+            <textarea rows="5" name="message"></textarea>
+            <h3>CheckBox :</h3>
+            <aside>
+                <input type="checkbox" name="newsletter" id="newsletter" checked>
+                <label for="newsletter">Je souhaite recevoir la newsletter de Cocooning</label>
+            </aside>
+            <aside>
+                <input type="checkbox" name="ad" id="ad">
+                <label for="ad">Je souhaite recevoir des propositions des annonceurs partenaires de Cocooning</label>
+            </aside>
+            <hr>
+            <input type="submit" value="envoyer">
+
+        </form>
+    </section>
+</body>   
+</html> 

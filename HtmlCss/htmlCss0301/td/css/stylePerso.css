@@ -1,0 +1,9 @@
+h1{
+    background: seagreen;
+}
+section{
+    border: 2px solid black;
+}
+footer{
+    display: none;
+}
